@@ -3,6 +3,7 @@
     $cognome = $_GET["cognome"];
     $messaggio = $_GET["messaggio"];
     $nomecognome = $nome . " " . $cognome;
+    $lenghtmessaggio = strlen($messaggio)
 ?>
 
 <!DOCTYPE html>
@@ -15,5 +16,6 @@
 <body>
     <h1>Utente: <?php echo $nomecognome ?></h1>
     <p>Messaggio inviato: <?php echo $messaggio ?></p>
+    <p>Lunghezza messaggio: <?php echo $lenghtmessaggio ?> caratteri</p>
 </body>
 </html>
